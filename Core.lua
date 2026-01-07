@@ -1,11 +1,13 @@
--- Core loop skeleton
 local Core = {}
-local Target = require(script.TargetSelector)
-local AI = require(script.AICombo)
+local M = {}
 
-function Core.Start(Config)
+function Core.SetModules(mods)
+    M = mods
+end
+
+function Core.Start()
     print("Core started")
-    -- main loop (SAFE placeholder)
+    -- main loop sau này viết ở đây
 end
 
 return Core
